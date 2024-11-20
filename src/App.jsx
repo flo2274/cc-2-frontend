@@ -50,13 +50,6 @@ function App() {
       </header>
       <main className="container mx-auto py-8 px-4">
         <InputForm addItem={addItem} />
-        <div className="mt-6">
-          <ItemList
-            items={data}
-            onEdit={setEditingItem}
-            onDelete={deleteItem}
-          />
-        </div>
         {editingItem && (
           <div className="mt-6">
             <EditForm
@@ -66,6 +59,13 @@ function App() {
             />
           </div>
         )}
+        <div className="mt-6">
+          <ItemList
+            items={data}
+            onEdit={setEditingItem}
+            onDelete={deleteItem}
+          />
+        </div>
       </main>
     </div>
   );
