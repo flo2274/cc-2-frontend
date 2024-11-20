@@ -44,17 +44,29 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Aufgabenliste</h1>
-      <InputForm addItem={addItem} />
-      <ItemList items={data} onEdit={setEditingItem} onDelete={deleteItem} />
-      {editingItem && (
-        <EditForm
-          item={editingItem}
-          updateItem={updateItem}
-          setEditingItem={setEditingItem}
-        />
-      )}
+    <div className="App bg-gray-100 min-h-screen">
+      <header className="bg-blue-600 text-white py-6">
+        <h1 className="text-3xl font-bold text-center">Aufgabenliste</h1>
+      </header>
+      <main className="container mx-auto py-8 px-4">
+        <InputForm addItem={addItem} />
+        <div className="mt-6">
+          <ItemList
+            items={data}
+            onEdit={setEditingItem}
+            onDelete={deleteItem}
+          />
+        </div>
+        {editingItem && (
+          <div className="mt-6">
+            <EditForm
+              item={editingItem}
+              updateItem={updateItem}
+              setEditingItem={setEditingItem}
+            />
+          </div>
+        )}
+      </main>
     </div>
   );
 }
