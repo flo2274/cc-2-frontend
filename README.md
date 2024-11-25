@@ -1,8 +1,35 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dies ist das Frontend-Projekt, das mit React und Vite erstellt wurde.
 
-Currently, two official plugins are available:
+## Voraussetzungen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Stelle sicher, dass Node.js und npm auf deinem System installiert sind. Du kannst die Versionen mit den folgenden Befehlen überprüfen:
+
+```bash
+node -v
+npm -v
+```
+
+## Installation
+
+1. Klone dieses Repository:
+
+```bash
+git clone https://github.com/flo2274/cc-2-frontend
+cd frontend
+```
+
+2. Installiere die Abhängigkeiten:
+
+```bash
+npm install
+```
+
+3. Entwicklung
+
+Um die Entwicklungsumgebung zu starten, führe den folgenden Befehl aus:
+
+```bash
+npm run dev
+```
